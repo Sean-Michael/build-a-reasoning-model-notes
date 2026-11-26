@@ -1,0 +1,23 @@
+[project]
+name = "build-a-reasoning-model"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sean-Michael", email = "seanm.riesterer@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "reasoning-from-scratch>=0.1.2",
+    "setuptools>=61.0",
+    "sympy>=1.14.0",
+    "tokenizers>=0.21.2",
+    "torch>=2.10,<3",
+]
+
+[project.scripts]
+build-a-reasoning-model = "build_a_reasoning_model:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
